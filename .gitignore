@@ -1,0 +1,17 @@
+# IDE
+.idea/
+.vscode/
+
+# Node.js
+node_modules/
+
+# 打包目录
+dist/
+
+# Java
+target/
+
+# 日志
+*.log
+
+backend/src/main/resources/application-dev.yml

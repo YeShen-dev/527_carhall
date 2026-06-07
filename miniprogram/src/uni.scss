@@ -1,0 +1,33 @@
+// ============================================================
+// AutoParts Mall 小程序 — Design System Tokens
+// ============================================================
+$color-primary: #2563EB;
+$color-primary-light: #3B82F6;
+$color-primary-lighter: #DBEAFE;
+$color-success: #10B981;
+$color-success-light: #D1FAE5;
+$color-warning: #F59E0B;
+$color-warning-light: #FEF3C7;
+$color-danger: #EF4444;
+$color-danger-light: #FEE2E2;
+$bg-base: #F8FAFC;
+$bg-card: #FFFFFF;
+$bg-muted: #F1F5F9;
+$text-primary: #0F172A;
+$text-secondary: #475569;
+$text-muted: #94A3B8;
+$border-color: #E2E8F0;
+$radius-sm: 8rpx;
+$radius-md: 12rpx;
+$radius-lg: 16rpx;
+$radius-xl: 20rpx;
+$shadow-sm: 0 2rpx 4rpx rgba(0,0,0,0.04);
+$shadow-md: 0 4rpx 12rpx rgba(0,0,0,0.06);
+$shadow-lg: 0 8rpx 24rpx rgba(0,0,0,0.08);
+$shadow-xl: 0 16rpx 40rpx rgba(0,0,0,0.1);
+
+// uView theme
+$u-primary: $color-primary;
+$u-success: $color-success;
+$u-warning: $color-warning;
+$u-error: $color-danger;

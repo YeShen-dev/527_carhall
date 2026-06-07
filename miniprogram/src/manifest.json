@@ -1,0 +1,20 @@
+{
+  "name": "AutoParts Mall",
+  "appid": "wx80e229d8b8a3b8a6",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "mp-weixin": {
+    "appid": "wx80e229d8b8a3b8a6",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "permission": {
+      "scope.userLocation": { "desc": "用于获取用户位置信息" }
+    },
+    "requiredPrivateInfos": ["getLocation"],
+    "usingComponents": true
+  }
+}

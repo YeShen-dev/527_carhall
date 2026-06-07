@@ -1,0 +1,62 @@
+spring:
+  profiles:
+    active: dev
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:sk-your-api-key-here}
+      base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+      chat:
+        options:
+          model: gpt-3.5-turbo
+          temperature: 0.7
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+jwt:
+  secret: YXV0b3BhcnRzLW1hbGwtand0LXNlY3JldC1rZXktMjAyNC1wcm9k
+  expiration: 86400000
+  refresh-expiration: 604800000
+
+# 验证码开关 (true=启用, false=全局关闭, 方便开发测试)
+captcha:
+  enabled: true
+
+# 短信验证码配置 (开发环境打印到日志)
+sms:
+  enabled: true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# =============================================
+# 支付系统配置
+# mock=true: 模拟支付，无需真实商户号即可本地运行
+# mock=false: 真实支付，需配置微信/支付宝商户凭证
+# =============================================
+payment:
+  mock: true
+  expire-minutes: 30
+  wechat:
+    app-id: wx0000000000000000
+    mch-id: "0000000000"
+    api-v3-key: your-api-v3-key-32chars
+    private-key-path: /path/to/apiclient_key.pem
+    serial-no: your-serial-no
+    notify-url: http://localhost:8833/api/payment/notify/wechat
+  alipay:
+    app-id: "2021000000000000"
+    private-key: MIIEvQIBADANBg...
+    alipay-public-key: MIIBIjANBg...
+    gateway-url: https://openapi.alipaydev.com/gateway.do
+    notify-url: http://localhost:8833/api/payment/notify/alipay
+    return-url: http://localhost:5173/payment/return
